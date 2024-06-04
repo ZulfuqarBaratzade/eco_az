@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="#"><img src="../images/logo/ecorest logo-01.png" alt="Logo"></a>
+        </div>
+        <div class="navbar">
+            <ul>
+                <li><a href="#">Haqqimizda</a></li>
+                <li class="dropdown">
+                    <a href="#">Xidmetlerimiz</a>
+                    <ul class="dropdown-content">
+                        <li><a href="#">Qonaqlama</a></li>
+                        <li><a href="#">Metbex</a></li>
+                        <li><a href="#">Kend Mehsullari</a></li>
+                        <li><a href="#">Turlar</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Xeberler</a></li>
+                <li><a href="#">Bloq</a></li>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Elaqe</a></li>
+            </ul>
+        </div>
+        <div class="burger" onclick="toggleMenu()">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <div class="left_side">
+            <ul>
+                <li class="dropdown">
+                    <a href="#">az</a>
+                    <ul class="dropdown-content">
+                        <li><a href="#">en</a></li>
+                        <li><a href="#">ru</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <a href="#">Qeydiyyat</a>
+        </div>        
+    </header>
+    <script>
+        function toggleMenu() {
+            const navbar = document.querySelector('.navbar ul');
+            navbar.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
