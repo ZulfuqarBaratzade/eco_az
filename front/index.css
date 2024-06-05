@@ -25,6 +25,7 @@ a{
 a:hover{
     color:var(--grey);
 }
+
 /* header part  */
 header{
     margin: 20px 200px 0 200px;
@@ -54,28 +55,28 @@ header .navbar a{
     padding: 15px;
     text-decoration: none;
 }
-header .navbar ul .dropdown-content {
+/* header .navbar ul .dropdown-content {
     display: none;
     position: absolute;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     min-width: 160px;
     z-index: 1;
     margin:20px 0 0 0;
-}
-header .navbar ul .dropdown-content a {
+} */
+/* header .navbar ul .dropdown-content a {
     color: black;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
     text-align: left;
-}
-header .navbar ul .dropdown-content a:hover {
+} */
+/* header .navbar ul .dropdown-content a:hover {
     background-color: #f1f1f1;
     color: var(--grey);
-}
-header .navbar ul .dropdown:hover .dropdown-content {
+} */
+/* header .navbar ul .dropdown:hover .dropdown-content {
     display: block;
-}
+} */
 header .left_side {
     display: flex;
     align-items: center;
@@ -134,7 +135,9 @@ header .left_side .dropdown:hover .dropdown-content {
     gap: 10px;
     margin-bottom: 10px; 
 }
+.services button:active{
 
+}
 /* Search box */
 .search-box {
     position: relative;
@@ -178,6 +181,7 @@ header .left_side .dropdown:hover .dropdown-content {
     opacity: 0.8;
 
 }
+
 /* end search box */
 
 /* services */ 
@@ -198,6 +202,11 @@ header .left_side .dropdown:hover .dropdown-content {
    border-bottom: 1px solid;
    opacity: 0.4;
 }
+.services span button:link{
+    border-bottom: 1px solid;
+    opacity: 0.4;
+ }
+ 
 
 .services .comment-service{
     position: absolute;

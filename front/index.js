@@ -61,6 +61,8 @@ function showText(id) {
     const spanToShow = document.getElementById(id);
     if (spanToShow) {
         spanToShow.style.display = 'block';
+        
+
     }
 }
 
