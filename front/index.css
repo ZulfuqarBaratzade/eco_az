@@ -135,9 +135,7 @@ header .left_side .dropdown:hover .dropdown-content {
     gap: 10px;
     margin-bottom: 10px; 
 }
-.services button:active{
 
-}
 /* Search box */
 .search-box {
     position: relative;
