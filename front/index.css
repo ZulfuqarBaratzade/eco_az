@@ -7,10 +7,10 @@
 *{
     box-sizing: border-box;
     margin:0;
-    font-family: sans-serif;
 }
 body{
     width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
 }
 a{
     letter-spacing: 2px;
@@ -110,65 +110,4 @@ header .left_side .dropdown:hover .dropdown-content {
     display: block;
 }
 
-/* Burger menu styling */
-header .burger {
-    display: none;
-    flex-direction: column;
-    cursor: pointer;
-}
-header .burger div {
-    width: 25px;
-    height: 3px;
-    background-color: #000;
-    margin: 5px;
-    transition: 0.4s;
-}
-
-@media (max-width: 1200px) {
-    header {
-        margin: 20px 100px 0 100px;
-    }
-}
-
-@media (max-width: 992px) {
-    header {
-        margin: 20px 50px 0 50px;
-    }
-}
-
-@media (max-width: 768px) {
-    header {
-        flex-direction: column;
-        margin: 20px 20px 0 20px;
-    }
-    header .navbar ul {
-        flex-direction: column;
-        display: none;
-    }
-    header .navbar ul.active {
-        display: flex;
-    }
-    header .burger {
-        display: flex;
-    }
-    header .left_side {
-        margin-top: 20px;
-        flex-direction: column;
-    }
-    header .left_side ul {
-        flex-direction: row;
-        margin-bottom: 10px;
-    }
-    header .left_side ul li {
-        margin-right: 10px;
-    }
-}
-
-@media (max-width: 576px) {
-    header .navbar ul {
-        flex-direction: column;
-    }
-    header .navbar ul li {
-        margin-bottom: 10px;
-    }
-}
+/* Responsive Header */
