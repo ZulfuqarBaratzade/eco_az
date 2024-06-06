@@ -71,3 +71,27 @@ document.addEventListener('DOMContentLoaded', (event) => {
     const spans = document.querySelectorAll('.comment-service span');
     spans.forEach(span => span.style.display = 'none');
 });
+
+
+document.addEventListener("DOMContentLoaded", function() {
+    const accordionButtons = document.querySelectorAll(".faq-accordion button");
+  
+    accordionButtons.forEach(button => {
+      button.addEventListener("click", function() {
+        const expanded = button.getAttribute("aria-expanded") === "true" || false;
+  
+        // Close all accordion items
+        accordionButtons.forEach(btn => {
+          btn.setAttribute("aria-expanded", "false");
+          btn.nextElementSibling.style.display = "none";
+        });
+  
+        // Toggle the current accordion item
+        if (!expanded) {
+          button.setAttribute("aria-expanded", "true");
+          button.nextElementSibling.style.display = "block";
+        }
+      });
+    });
+  });
+  
